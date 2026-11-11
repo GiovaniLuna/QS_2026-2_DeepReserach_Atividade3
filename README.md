@@ -34,7 +34,7 @@ Detalhes de gravação e participantes em [`VIDEO.md`](VIDEO.md).
 
 - **Brenno Phelipe Silva dos Santos** (202400050750): [ Parte D — Avaliação Humana Principal (R1). Registro da regra binária de falha crítica (0/1); condução da avaliação humana das 12 saídas (Versão A e B) sob a rubrica tridimensional (Correção, Relevância e Suporte); documentação de evidências e justificativas breves com base nas fontes oficiais do DeepResearch; preparação da infraestrutura e template de consenso para a revisão independente de R2; consolidação dos artefatos da Parte D em Markdown e CSV. ]
 - **Daniel José Silva Trindade** (202200059698): [ A DEFINIR ]
-- **Emilly Kathellen de Jesus Oliveira** (202400050830): [ A DEFINIR ]
+- **Emilly Kathellen de Jesus Oliveira** (202400050830): [ Parte D — Segunda revisão R2 e consenso ]
 - **Filipe de Carvalho Godoy** (202100115408): [ Parte C — métrica automática. Definição e pré-registro da métrica (F1 lexical por tokens), da normalização NFC/casefold, da tokenização, do tratamento de casos de borda e do limiar τ = 0,5, versionados antes da execução da bateria. Implementação do script de cálculo e da suíte de verificação com 10 pares de valor calculado manualmente. Cálculo do F1 e do sinal automático das 12 saídas. Declaração prévia da limitação da métrica, com previsão registrada antes da bateria de que abstenções corretas e concisas seriam reprovadas pelo sinal automático — confirmada no CT05. ]
 - **Giovani Barros Luna Gomes** (202400050885): [ A DEFINIR ]
 - **Lais Santos de Sousa** (202100115364): [ A DEFINIR ]
