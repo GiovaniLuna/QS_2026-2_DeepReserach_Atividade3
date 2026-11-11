@@ -3,12 +3,26 @@
 
 ---
 
-## 1. Ciclo de Vida e Rastreabilidade
+## 1. Ciclo de Vida, Rastreabilidade e Fluxo de Execução
 
-O processo de experimentação e controle de qualidade deste projeto seguiu um fluxo estritamente linear e rastreável. Nenhuma nota substituiu a saída bruta original, e nenhum consenso sobrescreveu as avaliações individuais.
+Para garantir a validade científica do experimento e a auditoria das métricas, o processo de controle de qualidade do *DeepResearch* seguiu um ciclo de vida estrito, linear e rastreável. Como a ferramenta principal de versionamento adotada foi o Git (via GitHub), não houve necessidade de implantação de pipelines complexos de MLOps; a rastreabilidade foi garantida pelo isolamento de artefatos em *commits* e diretórios específicos.
 
-**Fluxo do Experimento:**
-`Objetivo (Abstenção Segura) ➔ Versão A (Baseline) ➔ Mudança B (Guardrail) ➔ Execução (12 saídas) ➔ Avaliação (F1 + Humana) ➔ Decisão e Acompanhamento`
+A regra fundamental de **não-sobrescrita** foi rigorosamente aplicada: nenhuma nota consolidada substituiu a saída bruta original gerada pela IA, e nenhum consenso sobrescreveu as avaliações humanas individuais. 
+
+O experimento obedeceu ao seguinte fluxo metodológico:
+
+*   **1. Objetivo:** Melhorar a fidelidade factual e a segurança das respostas fundamentadas em fontes no fluxo de busca do *DeepResearch*, introduzindo um *guardrail* explícito de abstenção e tratamento de conflitos no *prompt* do sistema.
+*   **2. Versão A (Baseline):** Estabelecimento do grupo de controle. O *prompt* original do sistema foi congelado e preservado no repositório. Essa etapa foi essencial para permitir a comprovação matemática e comparativa de qualquer melhoria na qualidade do software.
+*   **3. Mudança B (Guardrail):** Isolamento de uma única variável. Criou-se uma nova versão do sistema contendo a injeção do *guardrail* ativado diretamente no *System Prompt* (a instrução restritiva obrigando a declaração de "evidência insuficiente" em caso de ausência de dados explícitos).
+*   **4. Execução:** Rodada de testes na infraestrutura de inferência. Os 6 casos de teste (CT01 a CT06) foram submetidos às Versões A e B sob condições idênticas de temperatura (0.0) na API, gerando 12 artefatos de saída em formato JSON (as respostas brutas do modelo).
+*   **5. Avaliação:** Medição comparativa baseada na metodologia GQM. As 12 saídas passaram pelo script de avaliação automática (F1 Lexical) e, posteriormente, foram submetidas à auditoria humana de duplo cego (avaliadores R1 e R2), julgando os critérios de Correção, Relevância, Suporte e Falhas Críticas.
+*   **6. Decisão e Acompanhamento:** Veredito baseado em dados. Constatou-se a aprovação da Versão B em virtude do aumento da segurança factual e mitigação de alucinações. O acompanhamento contínuo é garantido pelo versionamento em repositório: caso ocorra regressão funcional, a equipe tem o caminho rastreável para efetuar um *rollback* imediato para o código da Versão A.
+
+### 1.1. O Mecanismo de Segurança (Ativação do Guardrail)
+
+Durante o fluxo, a ativação do *guardrail* não ocorreu via parâmetros de código rígido, mas por meio da Engenharia de Prompts na Versão B. A restrição foi declarada de forma clara e imperativa nas instruções de base. 
+
+Ao utilizar o mecanismo de atenção (*attention mechanism*) intrínseco aos Grandes Modelos de Linguagem (LLMs), a IA calcula o peso semântico das instruções. Quando a Versão B impôs que o modelo estava "terminantemente proibido de deduzir" e deveria "abster-se obrigatoriamente", o modelo compreendeu a alta penalização de desobedecer à trava. Isso ficou provado no **CT05**, onde a IA ativou o protocolo de segurança perfeitamente, recusando-se a inventar dados e admitindo a limitação da documentação fonte, neutralizando o risco de confabulação.
 
 **Cadeia de Rastreabilidade (Exemplo - Caso CT05_B):**
 1. **Caso / Fonte:** `docs/Parte B — Seis casos, duas versões e 12 saídas.md` (CT05 - SWE-bench Lite)
