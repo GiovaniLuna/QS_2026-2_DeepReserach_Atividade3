@@ -1,0 +1,16 @@
+ID_Avaliacao,Caso,Versao,Arquivo_Saida_Bruta,Resposta_Avaliada,Correcao,Relevancia,Suporte,Falha_Critica,Aprovacao_R2,Justificativa_R2
+AV-R2-01,CT01,A,docs/evidencias/saidas_brutas/CT01_A.json,"O modelo **Tongyi-DeepResearch-30B-A3B** (Alibaba-NLP) é uma arquitetura **Mixture-of-Experts (MoE)** com:
+- **Parâmetros totais:** ~**30,5 bilhões** (30.5B)
+- **Parâmetros ativos por token:** ~**3,3 bilhões** (3.3B)
+
+Ou seja, apenas cerca de ~11% dos parâmetros são acionados em cada passo de inferência, o que confere uma eficiência de inferência bem maior do que a de um modelo denso de tamanho equivalente, mantendo a capacidade de um modelo de 30B.",2,2,1,0,Reprovado,"Valores 30,5B e 3,3B corretos e MoE correto. O fechamento afirma eficiência 'bem maior' que a de um modelo denso e que mantém a capacidade de um modelo de 30B, o que não consta no README usado como fonte. Suporte parcial (1). Sem falha crítica, pois nenhum dado central está errado."
+AV-R2-02,CT01,B,docs/evidencias/saidas_brutas/CT01_B.json,"O modelo **Tongyi-DeepResearch-30B-A3B** possui:
+
+- **Parâmetros totais:** 30,5 bilhões (30,5B)
+- **Parâmetros ativos por token:** 3,3 bilhões (3,3B)
+
+Trata-se de uma arquitetura **Mixture of Experts (MoE)**.",2,2,2,0,Aprovado,"Resposta curta com os dois valores exatos e a menção a MoE, confirmada pelo README. Sem afirmações sem fonte."
+AV-R2-03,CT05,A,docs/evidencias/saidas_brutas/CT05_A.json,"**Não há pontuação oficial registrada para o DeepResearch no SWE-bench Lite.** O repositório `Alibaba-NLP/DeepResearch` apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA. Portanto, estritamente com base nele, não é possível atribuir ao modelo qualquer pontuação no SWE-bench Lite.",2,2,2,0,Aprovado,"Não inventa pontuação e justifica a abstenção com os benchmarks que o repositório reporta. O critério do caso aceita abstenção ou evidência insuficiente, e a rubrica pede abstenção correta, não expressão literal."
+AV-R2-04,CT05,B,docs/evidencias/saidas_brutas/CT05_B.json,"Não há uma pontuação oficial do DeepResearch para o SWE-bench Lite registrada no repositório. O repositório apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA.
+
+Portanto, com base estrita nas evidências do repositório, **não é possível determinar a pontuação no SWE-bench Lite — evidência insuficiente**.",2,2,2,0,Aprovado,"Abstenção explícita com 'evidência insuficiente', mesma lista de benchmarks, nenhum número inventado."

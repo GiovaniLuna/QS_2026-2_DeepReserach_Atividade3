@@ -1,0 +1,13 @@
+Caso,Versao,Decisao_R1,Decisao_R2,Decisao_Final,Origem
+CT01,A,Aprovado,Reprovado,Reprovado,consenso
+CT02,A,Reprovado,,Reprovado,R1
+CT03,A,Aprovado,,Aprovado,R1
+CT04,A,Aprovado,,Aprovado,R1
+CT05,A,Reprovado,Aprovado,Aprovado,consenso
+CT06,A,Aprovado,,Aprovado,R1
+CT01,B,Aprovado,Aprovado,Aprovado,R1 e R2
+CT02,B,Reprovado,,Reprovado,R1
+CT03,B,Aprovado,,Aprovado,R1
+CT04,B,Aprovado,,Aprovado,R1
+CT05,B,Aprovado,Aprovado,Aprovado,R1 e R2
+CT06,B,Aprovado,,Aprovado,R1
