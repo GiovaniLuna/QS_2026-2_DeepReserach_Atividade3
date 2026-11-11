@@ -65,7 +65,7 @@ Isso comprova a premissa de que **uma paráfrase correta ou uma resposta justifi
 
 O gráfico e a matriz abaixo ilustram a proporção de concordância (onde o sinal automático e o humano deram o mesmo veredito) versus a divergência, isolando o comportamento nos 12 casos:
 
-![Gráfico de Aprovação](docs/Gráfico de comparação de aprovação.jpeg)
+![Gráfico de Aprovação](<Gráfico de comparação de aprovação.jpeg>)
 
 | Matriz de Decisão (12 Casos) | Avaliação Humana: APROVADO | Avaliação Humana: REPROVADO |
 | :--- | :--- | :--- |
