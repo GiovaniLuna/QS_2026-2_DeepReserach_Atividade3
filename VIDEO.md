@@ -1,16 +1,17 @@
 # Detalhes de Gravação e Participantes - AV1
 
-* **Link do Vídeo da Atividade:** [https://youtu.be/Sk3gfnloTnI?is=OQ3gvninRZX99Upi](https://youtu.be/Sk3gfnloTnI?is=OQ3gvninRZX99Upi)
+* **Link do Vídeo da Atividade:** 
 
-## Divisão de Responsabilidades e Apresentação
+## Divisão de Responsabilidades e Apresentação 
 
 | Seção / Tópico | Responsável(is) | Status |
 | :--- | :--- | :--- |
-| **Contexto e Expectativa de Qualidade** | Brenno Phelipe | Concluído ✅ |
-| **Requisitos de Qualidade** | Daniel Trindade + Filipe Godoy | Concluído ✅ |
-| **Aplicação da ISO** | Thiago Mecena | Concluído ✅ |
-| **Casos de Teste, Avaliação Inicial e Variabilidade e Não Determinismo** | Emilly Kathellen + Giovani Barros | Concluído ✅|
-| **Plano de Melhoria e Uso Crítico** | Lais Santos | Concluído ✅|
+| **Plano GQM (Objetivo, Perguntas e Métricas)** | [ A DEFINIR ] | [ PENDENTE ] |
+| **Definição dos 6 Casos e Respostas de Referência** | [ A DEFINIR ] | [ PENDENTE ] |
+| **Cálculo da Métrica Automática (F1 Lexical)** | [ A DEFINIR ] | [ PENDENTE ] |
+| **Avaliação Humana (Anotadores R1 e R2)** | [ A DEFINIR ] | [ PENDENTE ] |
+| **Análise de Divergências e Gráficos** | [ A DEFINIR ] | [ PENDENTE ] |
+| **Versionamento, Diagrama de Fluxo e Manifestos** | [ A DEFINIR ] | [ PENDENTE ] |
 
 ---
 * **Equipe Completa:** Brenno Phelipe, Daniel Trindade, Emilly Kathellen, Filipe Godoy, Giovani Barros, Lais Santos e Thiago Mecena.

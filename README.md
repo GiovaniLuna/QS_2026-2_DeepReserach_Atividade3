@@ -1,7 +1,7 @@
 # Equipe 06 — DeepResearch
 
-Avaliação inicial de qualidade de uma aplicação de IA generativa
-**Disciplina:** Qualidade de Software — AV1 (2026.2)
+**Disciplina:** Qualidade de Software — AV3 (2026.2)
+**Escopo:** Métricas automáticas versus avaliação humana (GQM) e versionamento de sistemas generativos
 
 ## Projeto analisado
 
@@ -26,22 +26,26 @@ Avaliação inicial de qualidade de uma aplicação de IA generativa
 
 ## Vídeo da atividade
 
-**URL:** (https://youtu.be/Sk3gfnloTnI?is=OQ3gvninRZX99Upi)
+**URL:** (DEFINIR)
 
 Detalhes de gravação e participantes em [`VIDEO.md`](VIDEO.md).
 
 ## Contribuição Individual
 
-* **Brenno Phelipe Silva dos Santos** (202400050750): Definição do contexto operacional, levantamento de partes interessadas e expectativas de qualidade (Seção 1).
-* **Daniel José Silva Trindade** (202200059698): Mapeamento e modelagem conceitual das normas internacionais ISO/IEC 25010, 25012 e 42001.
-* **Emilly Kathellen de Jesus Oliveira** (202400050830): Estruturação formal dos Casos de Teste e condução da Avaliação Prática de Variabilidade.
-* **Filipe de Carvalho Godoy** (202100115408): Especificação detalhada dos requisitos RQ-01 a RQ-08, diagnóstico técnico e elaboração do README.
-* **Giovani Barros Luna Gomes** (202400050885): Adaptação do código para consumo de APIs gratuitas, execução dos testes práticos e mapeamento de falhas de segurança.
-* **Lais Santos de Sousa** (202100115364): Classificação de achados de testes por gravidade, estruturação do plano de melhoria e elaboração da Declaração de Uso de IA.
-* **Thiago Mecena Silva** (202100045840): Consolidação técnica do relatório, revisão normativa, métricas de governança de IA e supervisão do projeto.
+- **Brenno Phelipe Silva dos Santos** (202400050750): [ A DEFINIR ]
+- **Daniel José Silva Trindade** (202200059698): [ A DEFINIR ]
+- **Emilly Kathellen de Jesus Oliveira** (202400050830): [ A DEFINIR ]
+- **Filipe de Carvalho Godoy** (202100115408): [ A DEFINIR ]
+- **Giovani Barros Luna Gomes** (202400050885): [ A DEFINIR ]
+- **Lais Santos de Sousa** (202100115364): [ A DEFINIR ]
+- **Thiago Mecena Silva** (202100045840): [ A DEFINIR ]
 
-## Entregáveis (até 16/09/2026)
+## Entregáveis (Prazo: 11/11/2026)
 
-- [ ] Relatório técnico em PDF (8 a 12 páginas, excluídos anexos)
+- [ ] **Relatório técnico em PDF:** Contribuição dos integrantes, recorte/GQM, método, tabela/gráfico, análise de divergência ou caso-limite, versionamento/diagrama, decisão experimental, limitações e referências.
+- [ ] **Atualização do repositório:** Criação do repositório, `README.md` atualizado e referências recuperáveis das versões A e B.
+- [ ] **Arquivos de dados e métricas:** Arquivos das 6 perguntas/referências, 12 saídas brutas, tabela da métrica automática (F1) e 16 anotações humanas (12 de R1 + 4 de R2, com consenso se necessário).
+- [ ] **Planejamento e versionamento:** Manifesto curto por versão, tabela do plano GQM e critério experimental de decisão.
+- [ ] **Apresentação:** Slides e Vídeo com participação de todos. URL do vídeo deve constar neste README, no relatório e no arquivo `VIDEO.md` (ou `video.txt`).
 
-**Apresentação:** 17/09/2026.
+**Apresentação:** 12/11/2026
