@@ -61,7 +61,7 @@ Isso comprova a premissa de que **uma paráfrase correta ou uma resposta justifi
 
 ---
 
-## 4. Visualização Simples (Matriz de Decisão)
+## 4. Visualização de Gráfico e Matriz de Decisão
 
 O gráfico e a matriz abaixo ilustram a proporção de concordância (onde o sinal automático e o humano deram o mesmo veredito) versus a divergência, isolando o comportamento nos 12 casos:
 
