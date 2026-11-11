@@ -67,22 +67,73 @@ Conforme a Seção 7 e Seção 10 da especificação da Atividade 3 e as diretri
 
 ---
 
-## 5. Estrutura de Integração com a Pessoa 6 (Emilly Kathellen — R2 e Consenso)
+## 5. Segunda Revisão (R2 — Emilly Kathellen) e Consenso
 
-A avaliação da segunda revisora (R2 — Emilly Kathellen) será realizada de forma independente para as quatro saídas críticas: **CT01-A, CT01-B, CT05-A e CT05-B**.
+**Data da avaliação de R2:** 11/11/2026
 
-*Template de integração reservado para a etapa independente de Emilly e sessão de consenso posterior:*
+R2 revisou de forma independente as saídas completas de **CT01-A, CT01-B, CT05-A e CT05-B** (campo `resposta_extraida` dos arquivos `docs/evidencias/saidas_brutas/CT*.json`), aplicando a mesma rubrica e a mesma regra de falha crítica de R1, sem acesso ao F1. O cegamento de versão foi parcial: como A e B de um mesmo caso foram lidas em sequência, a expressão "evidência insuficiente" no CT05-B denuncia a Versão B.
 
-| Caso / Versão | Notas R1 (C / R / S / FC) | Decisão R1 (Brenno) | Notas R2 (C / R / S / FC) | Decisão R2 (Emilly) | Houve Divergência? | Decisão de Consenso | Justificativa do Consenso |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **CT01_A** | (2, 2, 2, 0) | **Aprovado** | *(a preencher)* | *(a preencher)* | *[Pendente]* | *[Pendente]* | *[A preencher após deliberação]* |
-| **CT01_B** | (2, 2, 2, 0) | **Aprovado** | *(a preencher)* | *(a preencher)* | *[Pendente]* | *[Pendente]* | *[A preencher após deliberação]* |
-| **CT05_A** | (2, 1, 2, 0) | **Reprovado** | *(a preencher)* | *(a preencher)* | *[Pendente]* | *[Pendente]* | *[A preencher após deliberação]* |
-| **CT05_B** | (2, 2, 2, 0) | **Aprovado** | *(a preencher)* | *(a preencher)* | *[Pendente]* | *[Pendente]* | *[A preencher após deliberação]* |
+### 5.1 Anotações de R2
 
-> **Métrica de Concordância Inter-Avaliador R1–R2 (Denominador Estrito 4):**
-> $$\text{Concordância}_{R1-R2} = \frac{\text{Número de decisões idênticas pré-consenso}}{4}$$
-> *(Conforme advertência expressa da Seção 8 do edital, o denominador desta comparação é estritamente 4. É terminantemente vedado o uso de 12 ou 16).*
+| Caso | Versão | Correção | Relevância | Suporte | Falha Crítica | Decisão R2 | Evidência / Justificativa de R2 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| CT01 | A | 2 | 2 | 1 | 0 | **Reprovado** | Os valores 30,5B e 3,3B estão corretos e a leitura de MoE também. O problema está no fechamento da resposta: ela afirma que o modelo tem eficiência de inferência "bem maior" que a de um modelo denso e que mantém a capacidade de um modelo de 30B. Isso não consta no README usado como fonte e foi apresentado como fato. Como o objetivo do plano GQM é fidelidade às fontes, Suporte 1. Não há falha crítica, porque nenhum dado central está errado. |
+| CT01 | B | 2 | 2 | 2 | 0 | **Aprovado** | Resposta curta com os dois valores exatos (30,5B e 3,3B) e a menção a MoE, que o README confirma. Não acrescenta afirmações sem fonte. |
+| CT05 | A | 2 | 2 | 2 | 0 | **Aprovado** | Não inventa pontuação e justifica a abstenção com a lista de benchmarks que o repositório de fato reporta. O critério do caso aceita "abstenção ou evidência insuficiente", e a saída declara que não é possível atribuir pontuação. A rubrica pede abstenção correta, não uma expressão literal. |
+| CT05 | B | 2 | 2 | 2 | 0 | **Aprovado** | Abstenção explícita com "evidência insuficiente", mesma lista de benchmarks e nenhum número inventado. |
+
+### 5.2 Concordância R1–R2 (antes do consenso, denominador 4)
+
+| Caso / Versão | Notas R1 (C / R / S / FC) | Decisão R1 (Brenno) | Notas R2 (C / R / S / FC) | Decisão R2 (Emilly) | Houve Divergência? |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **CT01_A** | (2, 2, 2, 0) | Aprovado | (2, 2, 1, 0) | Reprovado | **Sim** |
+| **CT01_B** | (2, 2, 2, 0) | Aprovado | (2, 2, 2, 0) | Aprovado | Não |
+| **CT05_A** | (2, 1, 2, 0) | Reprovado | (2, 2, 2, 0) | Aprovado | **Sim** |
+| **CT05_B** | (2, 2, 2, 0) | Aprovado | (2, 2, 2, 0) | Aprovado | Não |
+
+> **Concordância R1–R2 = 2 / 4.** Nas duas divergências a diferença está em uma única dimensão (Suporte no CT01-A e Relevância no CT05-A), e nenhuma envolve falha crítica.
+
+### 5.3 Consenso
+
+As notas originais de R1 (Seção 4) e de R2 (Seção 5.1) continuam registradas sem alteração.
+
+| Caso / Versão | Decisão de Consenso | Justificativa do Consenso |
+| :--- | :---: | :--- |
+| **CT01_A** | **Reprovado** | R1 não comentou o parágrafo final da saída, que fala de eficiência e capacidade do modelo. Ao reler, R1 e R2 concordam que essa afirmação não tem apoio no README. Como R1 já tinha aplicado o mesmo rigor a afirmações extras no CT02, mantém-se o critério: Suporte 1 e, portanto, reprovada. |
+| **CT01_B** | **Aprovado** | Decisão comum de R1 e R2. |
+| **CT05_A** | **Aprovado** | A rubrica pede abstenção correta para Relevância 2, e o critério do CT05 aceita "abstenção ou evidência insuficiente". A saída A se abstém e não inventa número. Exigir a expressão literal confundiria forma com conteúdo. Relevância passa de 1 para 2. |
+| **CT05_B** | **Aprovado** | Decisão comum de R1 e R2. |
+
+### 5.4 Decisão humana final das 12 saídas
+
+CT01 e CT05 seguem o consenso. As demais seguem a decisão de R1.
+
+| Caso | Versão A | Versão B |
+| :--- | :---: | :---: |
+| CT01 | Reprovado (consenso) | Aprovado |
+| CT02 | Reprovado (R1) | Reprovado (R1) |
+| CT03 | Aprovado (R1) | Aprovado (R1) |
+| CT04 | Aprovado (R1) | Aprovado (R1) |
+| CT05 | Aprovado (consenso) | Aprovado |
+| CT06 | Aprovado (R1) | Aprovado (R1) |
+| **Aprovação humana (denominador 6)** | **4 / 6 (66,7%)** | **5 / 6 (83,3%)** |
+| **Falhas críticas** | 0 / 6 | 0 / 6 |
+
+### 5.5 Limitações de R2
+
+* R2 cobre 4 das 12 saídas; as outras oito dependem só de R1.
+* Concordância de 2/4 em amostra de quatro saídas, sem medida estatística de acordo.
+* As duas divergências vieram da interpretação de "Suporte parcial" (CT01-A) e "abstenção correta" (CT05-A).
+* O modelo registrado nos arquivos de saída é `minimax/minimax-m3.1-flash`, enquanto o cabeçalho deste documento cita a variante `:free`. Vale uniformizar no relatório.
+
+### 5.6 Arquivos de R2
+
+* Anotações de R2: [`docs/evidencias/tabela_avaliacao_humana_r2.csv`](evidencias/tabela_avaliacao_humana_r2.csv)
+* Decisão humana final (R1, R2 e consenso): [`docs/evidencias/tabela_decisao_humana_final.csv`](evidencias/tabela_decisao_humana_final.csv)
+
+### 5.7 Apoio de IA em R2
+
+As anotações e o consenso de R2 foram propostos com apoio do Claude (Anthropic), que leu as saídas brutas do repositório e redigiu o texto. Emilly revisou cada nota e assume a autoria de R2. O consenso foi discutido por R1 e R2. Nenhuma nota foi atribuída por LLM como se fosse avaliação humana independente.
 
 ---
 
