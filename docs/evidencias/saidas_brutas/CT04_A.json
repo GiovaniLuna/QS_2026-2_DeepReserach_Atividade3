@@ -1,0 +1,31 @@
+{
+  "id_execucao": "CT04_A",
+  "caso_id": "CT04",
+  "versao": "A",
+  "tipo_caso": "Funcional (Componente e Ferramenta)",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "temperatura": 0.0,
+  "timestamp": "2026-11-10 21:57:03",
+  "pergunta": "Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?",
+  "referencia_ouro": "A ferramenta visit utiliza a API do serviço externo Jina para leitura e sumarização do conteúdo de páginas web.",
+  "fonte_apoio": "Mapeamento TOOL_MAP em inference/react_agent.py e tool_visit.py",
+  "tempo_segundos": 10.4,
+  "total_tokens": 2587,
+  "rounds_react": 2,
+  "resposta_extraida": "A ferramenta **visit** utiliza a **Jina Reader API**, acessível por meio de **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.",
+  "saida_bruta_final": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível por meio de **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+  "historico_interacoes": [
+    {
+      "round": 1,
+      "content": "<tool_call>\n{\"name\":\"search\",\"arguments\":{\"query\":[\"\\\"visit\\\" \\\"DeepResearch\\\" sumarização conteúdo web serviço externo\",\"\\\"visit tool\\\" \\\"DeepResearch\\\" web summarization external service\",\"site:github.com DeepResearch visit tool summarize webpage external service\"]}}\n</tool_call>",
+      "reasoning": "We need answer Portuguese. Need identify likely asks: \"Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?\" Maybe referring to system/tool implementation? Need research. Need understand context. Th",
+      "elapsed_s": 7.04
+    },
+    {
+      "round": 2,
+      "content": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível por meio de **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+      "reasoning": "We need answer Portuguese. User asks what external service used by visit tool for web content summarization in DeepResearch. Evidence explicitly Jina Reader API / r.jina.ai. Need final strictly tags. Could say \"A ferramenta visit utiliza a API do Jin",
+      "elapsed_s": 1.86
+    }
+  ]
+}

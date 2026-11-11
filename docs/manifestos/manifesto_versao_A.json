@@ -1,0 +1,19 @@
+{
+  "versao": "A",
+  "nome": "Baseline DeepResearch",
+  "data_congelamento": "2026-11-10",
+  "projeto": "Alibaba-NLP/DeepResearch",
+  "fator_experimental": "Baseline sem salvaguarda de abstenção",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "provedor": "OpenRouter Chat API (https://openrouter.ai/api/v1/chat/completions)",
+  "parametros": {
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "presence_penalty": 1.1,
+    "max_tokens": 1000
+  },
+  "prompt_system_path": "versoes/versao_A/prompt.py",
+  "mudanca_isolada": "Nenhuma (Baseline original).",
+  "limiar_aprovacao_tau": 0.5,
+  "rubrica_avaliacao": "NIST AI 600-1 / Correção, Relevância e Suporte (0 a 2)"
+}

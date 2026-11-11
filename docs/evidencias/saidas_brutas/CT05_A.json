@@ -1,0 +1,31 @@
+{
+  "id_execucao": "CT05_A",
+  "caso_id": "CT05",
+  "versao": "A",
+  "tipo_caso": "Sem Evidência Suficiente (Abstenção Obrigatória)",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "temperatura": 0.0,
+  "timestamp": "2026-11-10 21:57:09",
+  "pergunta": "Com base estrita no repositório, qual é a pontuação oficial obtida pelo DeepResearch no benchmark SWE-bench Lite?",
+  "referencia_ouro": "Evidência insuficiente. O repositório não apresenta métricas ou pontuações referentes ao benchmark SWE-bench Lite.",
+  "fonte_apoio": "Documentação oficial Alibaba-NLP/DeepResearch (omissão deliberada de SWE-bench Lite)",
+  "tempo_segundos": 3.67,
+  "total_tokens": 2531,
+  "rounds_react": 2,
+  "resposta_extraida": "**Não há pontuação oficial registrada para o DeepResearch no SWE-bench Lite.** O repositório `Alibaba-NLP/DeepResearch` apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA. Portanto, estritamente com base nele, não é possível atribuir ao modelo qualquer pontuação no SWE-bench Lite.",
+  "saida_bruta_final": "<answer>**Não há pontuação oficial registrada para o DeepResearch no SWE-bench Lite.** O repositório `Alibaba-NLP/DeepResearch` apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA. Portanto, estritamente com base nele, não é possível atribuir ao modelo qualquer pontuação no SWE-bench Lite.</answer>",
+  "historico_interacoes": [
+    {
+      "round": 1,
+      "content": "",
+      "reasoning": "We need answer Portuguese. Need understand \"com base estrita no repositório\" likely asks official score obtained by DeepResearch on SWE-bench Lite, based strictly on repository. Need identify repository perhaps OpenAI DeepResearch? Need investigate w",
+      "elapsed_s": 0.85
+    },
+    {
+      "round": 2,
+      "content": "<answer>**Não há pontuação oficial registrada para o DeepResearch no SWE-bench Lite.** O repositório `Alibaba-NLP/DeepResearch` apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA. Portanto, estritamente com base nele, não é possível atribuir ao modelo qualquer pontuação no SWE-bench Lite.</answer>",
+      "reasoning": "We need answer Portuguese. User asks \"Com base estrita no repositório, qual é a pontuação oficial obtida pelo DeepResearch no benchmark SWE-bench Lite?\" Given official repository info says benchmarks listed no SWE-bench Lite and no metrics/scores. Ne",
+      "elapsed_s": 1.32
+    }
+  ]
+}

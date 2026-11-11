@@ -1,0 +1,31 @@
+{
+  "id_execucao": "CT06_B",
+  "caso_id": "CT06",
+  "versao": "B",
+  "tipo_caso": "Variação Metamórfica de CT01 (Paráfrase em Inglês)",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "temperatura": 0.0,
+  "timestamp": "2026-11-10 21:58:07",
+  "pergunta": "How many total and active params per token does Tongyi DeepResearch 30B A3B model have?",
+  "referencia_ouro": "The Tongyi-DeepResearch-30B-A3B model has 30.5 billion total parameters and 3.3 billion active parameters per token.",
+  "fonte_apoio": "README oficial em inglês (variação sintática/idiomática de CT01)",
+  "tempo_segundos": 5.47,
+  "total_tokens": 2584,
+  "rounds_react": 2,
+  "resposta_extraida": "Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are activated per token**.",
+  "saida_bruta_final": "<answer>Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are activated per token**.</answer>",
+  "historico_interacoes": [
+    {
+      "round": 1,
+      "content": "<tool_call>\n{\"name\": \"search\",\"arguments\": {\"query\": [\"Tongyi DeepResearch 30B A3B total parameters active parameters per token\"]}}\n</tool_call>",
+      "reasoning": "We need answer factual likely model Hugging Face Tongyi DeepResearch 30B A3B. Need determine total and active params per token. Need research credible sources. Searchweb.",
+      "elapsed_s": 1.64
+    },
+    {
+      "round": 2,
+      "content": "<answer>Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are activated per token**.</answer>",
+      "reasoning": "We need answer in tags. User asks how many total and active params per token. Evidence gives 30.5b total, 3.3b activated per token. Need perhaps distinguish marketed 30B A3B and exact. Entire final between tags. In Portuguese? User English but prompt",
+      "elapsed_s": 2.32
+    }
+  ]
+}

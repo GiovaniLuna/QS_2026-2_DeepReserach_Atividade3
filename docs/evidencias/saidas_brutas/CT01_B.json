@@ -1,0 +1,31 @@
+{
+  "id_execucao": "CT01_B",
+  "caso_id": "CT01",
+  "versao": "B",
+  "tipo_caso": "Funcional (Busca Factual Curta)",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "temperatura": 0.0,
+  "timestamp": "2026-11-10 21:57:23",
+  "pergunta": "Quais são os parâmetros totais e ativos por token do modelo Tongyi-DeepResearch-30B-A3B?",
+  "referencia_ouro": "O Tongyi-DeepResearch-30B-A3B possui 30,5 bilhões de parâmetros totais e 3,3 bilhões de parâmetros ativos por token.",
+  "fonte_apoio": "README oficial do repositório Alibaba-NLP/DeepResearch",
+  "tempo_segundos": 3.92,
+  "total_tokens": 2626,
+  "rounds_react": 2,
+  "resposta_extraida": "O modelo **Tongyi-DeepResearch-30B-A3B** possui:\n\n- **Parâmetros totais:** 30,5 bilhões (30,5B)\n- **Parâmetros ativos por token:** 3,3 bilhões (3,3B)\n\nTrata-se de uma arquitetura **Mixture of Experts (MoE)**.",
+  "saida_bruta_final": "<answer>O modelo **Tongyi-DeepResearch-30B-A3B** possui:\n\n- **Parâmetros totais:** 30,5 bilhões (30,5B)\n- **Parâmetros ativos por token:** 3,3 bilhões (3,3B)\n\nTrata-se de uma arquitetura **Mixture of Experts (MoE)**.</answer>",
+  "historico_interacoes": [
+    {
+      "round": 1,
+      "content": "",
+      "reasoning": "We need answer Portuguese. Need research. Question: total and active parameters per token of model Tongyi-DeepResearch-30B-A3B. Need identify. Likely 30B total, 3B active per token (MoE). Need substantiate sources. Need perhaps exact parameters: 30.5",
+      "elapsed_s": 1.22
+    },
+    {
+      "round": 2,
+      "content": "<answer>O modelo **Tongyi-DeepResearch-30B-A3B** possui:\n\n- **Parâmetros totais:** 30,5 bilhões (30,5B)\n- **Parâmetros ativos por token:** 3,3 bilhões (3,3B)\n\nTrata-se de uma arquitetura **Mixture of Experts (MoE)**.</answer>",
+      "reasoning": "We need answer Portuguese. Need based supplied official docs. User asks total and active per token parameters of model. Need say 30.5 billion total, 3.3 billion activated per token. Strictly tags. We should perhaps mention approximately 30.5B total /",
+      "elapsed_s": 1.2
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id_execucao": "CT03_A",
+  "caso_id": "CT03",
+  "versao": "A",
+  "tipo_caso": "Funcional (Governança e Licenciamento)",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "temperatura": 0.0,
+  "timestamp": "2026-11-10 21:56:51",
+  "pergunta": "Sob qual licença de código aberto o projeto Alibaba-NLP/DeepResearch é distribuído?",
+  "referencia_ouro": "O projeto Alibaba-NLP/DeepResearch é disponibilizado sob a licença de código aberto Apache 2.0.",
+  "fonte_apoio": "Arquivo LICENSE na raiz do repositório oficial",
+  "tempo_segundos": 3.47,
+  "total_tokens": 2385,
+  "rounds_react": 2,
+  "resposta_extraida": "O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, versão 2.0 (Apache-2.0)**.",
+  "saida_bruta_final": "<answer>O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, versão 2.0 (Apache-2.0)**.</answer>",
+  "historico_interacoes": [
+    {
+      "round": 1,
+      "content": "",
+      "reasoning": "We need answer in Portuguese likely. Need research. Question: \"Sob qual licença de código aberto o projeto Alibaba-NLP/DeepResearch é distribuído?\" Need identify GitHub project license. Need browse web. Search.",
+      "elapsed_s": 0.84
+    },
+    {
+      "round": 2,
+      "content": "<answer>O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, versão 2.0 (Apache-2.0)**.</answer>",
+      "reasoning": "We need answer in Portuguese, strictly tags. Need perhaps mention Apache License 2.0. User asks under what open source license distributed. Evidence says Apache 2.0. Need definitive concise. Ensure entire final within tags. Could include source repos",
+      "elapsed_s": 1.13
+    }
+  ]
+}

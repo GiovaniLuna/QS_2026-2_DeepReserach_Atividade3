@@ -1,0 +1,37 @@
+{
+  "id_execucao": "CT01_A",
+  "caso_id": "CT01",
+  "versao": "A",
+  "tipo_caso": "Funcional (Busca Factual Curta)",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "temperatura": 0.0,
+  "timestamp": "2026-11-10 21:56:33",
+  "pergunta": "Quais são os parâmetros totais e ativos por token do modelo Tongyi-DeepResearch-30B-A3B?",
+  "referencia_ouro": "O Tongyi-DeepResearch-30B-A3B possui 30,5 bilhões de parâmetros totais e 3,3 bilhões de parâmetros ativos por token.",
+  "fonte_apoio": "README oficial do repositório Alibaba-NLP/DeepResearch",
+  "tempo_segundos": 9.91,
+  "total_tokens": 5077,
+  "rounds_react": 3,
+  "resposta_extraida": "O modelo **Tongyi-DeepResearch-30B-A3B** (Alibaba-NLP) é uma arquitetura **Mixture-of-Experts (MoE)** com:\n- **Parâmetros totais:** ~**30,5 bilhões** (30.5B)\n- **Parâmetros ativos por token:** ~**3,3 bilhões** (3.3B)\n\nOu seja, apenas cerca de ~11% dos parâmetros são acionados em cada passo de inferência, o que confere uma eficiência de inferência bem maior do que a de um modelo denso de tamanho equivalente, mantendo a capacidade de um modelo de 30B.",
+  "saida_bruta_final": "<answer>\nO modelo **Tongyi-DeepResearch-30B-A3B** (Alibaba-NLP) é uma arquitetura **Mixture-of-Experts (MoE)** com:\n- **Parâmetros totais:** ~**30,5 bilhões** (30.5B)\n- **Parâmetros ativos por token:** ~**3,3 bilhões** (3.3B)\n\nOu seja, apenas cerca de ~11% dos parâmetros são acionados em cada passo de inferência, o que confere uma eficiência de inferência bem maior do que a de um modelo denso de tamanho equivalente, mantendo a capacidade de um modelo de 30B.\n</answer>",
+  "historico_interacoes": [
+    {
+      "round": 1,
+      "content": "I'll research this model to confirm the specifications.]<]minimax[>[<tool_call>\n]<]minimax[>[<invoke name=\"search\">]<]minimax[>[<query>]<]minimax[>[<item>Tongyi-DeepResearch-30B-A3B total parameters active parameters]<]minimax[>[</item>]<]minimax[>[<item>Tongyi DeepResearch 30B-A3B MoE model 3B activated parameters]<]minimax[>[</item>]<]minimax[>[<item>通义 DeepResearch-30B-A3B 模型 混合专家 总参数 激活参数]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[<invoke name=\"search\">]<]minimax[>[<query>]<]minimax[>[<item>Tongyi-DeepResearch-30B-A3B huggingface model card]<]minimax[>[</item>]<]minimax[>[<item>Tongyi-DeepResearch-30B-A3B github alibaba-nlp]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[</tool_call>",
+      "reasoning": "The user asks in Portuguese: \"What are the total and active parameters per token of the Tongyi-DeepResearch-30B-A3B model?\"\n\nThis is the Tongyi DeepResearch 30B-A3B model from Alibaba (Tongyi Lab / Alibaba Cloud). It's a MoE model with 30B total para",
+      "elapsed_s": 1.4
+    },
+    {
+      "round": 2,
+      "content": "]<]minimax[>[<tool_call>\n]<]minimax[>[<item>search</item>]<]minimax[>[<query>Tongyi-DeepResearch-30B-A3B 30.5B total parameters 3.3B activated per token technical report]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[<item>search</item>]<]minimax[>[<query>\"Tongyi-DeepResearch-30B-A3B\" experts MoE architecture details context length 128K]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[</tool_call>",
+      "reasoning": "The user asks in Portuguese: what are the total and active parameters per token of Tongyi-DeepResearch-30B-A3B? The answer: 30.5B total, 3.3B activated per token. Let me maybe verify with a quick search for additional detail, but the tool result alre",
+      "elapsed_s": 1.53
+    },
+    {
+      "round": 3,
+      "content": "]<]minimax[>[<tool_call>name>search</invoke>\n<invoke name=\"search</invoke>\n<query>Tongyi-DeepResearch-30B-A3B model card 30.5B total 3.3B activated MoE 128K context Apache 2.0]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[</tool_call>",
+      "reasoning": "The user asks in Portuguese: what are the total and active parameters per token of Tongyi-DeepResearch-30B-A3B? Answer: 30.5B total, 3.3B activated per token. Provide context.\n\nLet me maybe do one more verification search for the technical report det",
+      "elapsed_s": 2.47
+    }
+  ]
+}

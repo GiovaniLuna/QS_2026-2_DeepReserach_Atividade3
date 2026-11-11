@@ -1,0 +1,31 @@
+{
+  "id_execucao": "CT04_B",
+  "caso_id": "CT04",
+  "versao": "B",
+  "tipo_caso": "Funcional (Componente e Ferramenta)",
+  "modelo": "minimax/minimax-m3.1-flash",
+  "temperatura": 0.0,
+  "timestamp": "2026-11-10 21:57:51",
+  "pergunta": "Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?",
+  "referencia_ouro": "A ferramenta visit utiliza a API do serviço externo Jina para leitura e sumarização do conteúdo de páginas web.",
+  "fonte_apoio": "Mapeamento TOOL_MAP em inference/react_agent.py e tool_visit.py",
+  "tempo_segundos": 6.4,
+  "total_tokens": 2622,
+  "rounds_react": 2,
+  "resposta_extraida": "A ferramenta **visit** utiliza a **Jina Reader API**, acessível pelo endpoint **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.",
+  "saida_bruta_final": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível pelo endpoint **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+  "historico_interacoes": [
+    {
+      "round": 1,
+      "content": "",
+      "reasoning": "We need answer Portuguese. Question: \"Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?\" Need determine likely asks about implementation of DeepResearch perhaps some GitHub project / service. Nee",
+      "elapsed_s": 3.63
+    },
+    {
+      "round": 2,
+      "content": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível pelo endpoint **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+      "reasoning": "We need answer in Portuguese, strictly tags. Need determine external service used by visit tool for web content summarization in DeepResearch. Evidence says Jina API / Jina Reader API r.jina.ai. Need perhaps concise definitive. User explicitly asks. ",
+      "elapsed_s": 1.27
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+[
+  {
+    "id_execucao": "CT01_A",
+    "caso_id": "CT01",
+    "versao": "A",
+    "tipo_caso": "Funcional (Busca Factual Curta)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:56:33",
+    "pergunta": "Quais são os parâmetros totais e ativos por token do modelo Tongyi-DeepResearch-30B-A3B?",
+    "referencia_ouro": "O Tongyi-DeepResearch-30B-A3B possui 30,5 bilhões de parâmetros totais e 3,3 bilhões de parâmetros ativos por token.",
+    "fonte_apoio": "README oficial do repositório Alibaba-NLP/DeepResearch",
+    "tempo_segundos": 9.91,
+    "total_tokens": 5077,
+    "rounds_react": 3,
+    "resposta_extraida": "O modelo **Tongyi-DeepResearch-30B-A3B** (Alibaba-NLP) é uma arquitetura **Mixture-of-Experts (MoE)** com:\n- **Parâmetros totais:** ~**30,5 bilhões** (30.5B)\n- **Parâmetros ativos por token:** ~**3,3 bilhões** (3.3B)\n\nOu seja, apenas cerca de ~11% dos parâmetros são acionados em cada passo de inferência, o que confere uma eficiência de inferência bem maior do que a de um modelo denso de tamanho equivalente, mantendo a capacidade de um modelo de 30B.",
+    "saida_bruta_final": "<answer>\nO modelo **Tongyi-DeepResearch-30B-A3B** (Alibaba-NLP) é uma arquitetura **Mixture-of-Experts (MoE)** com:\n- **Parâmetros totais:** ~**30,5 bilhões** (30.5B)\n- **Parâmetros ativos por token:** ~**3,3 bilhões** (3.3B)\n\nOu seja, apenas cerca de ~11% dos parâmetros são acionados em cada passo de inferência, o que confere uma eficiência de inferência bem maior do que a de um modelo denso de tamanho equivalente, mantendo a capacidade de um modelo de 30B.\n</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "I'll research this model to confirm the specifications.]<]minimax[>[<tool_call>\n]<]minimax[>[<invoke name=\"search\">]<]minimax[>[<query>]<]minimax[>[<item>Tongyi-DeepResearch-30B-A3B total parameters active parameters]<]minimax[>[</item>]<]minimax[>[<item>Tongyi DeepResearch 30B-A3B MoE model 3B activated parameters]<]minimax[>[</item>]<]minimax[>[<item>通义 DeepResearch-30B-A3B 模型 混合专家 总参数 激活参数]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[<invoke name=\"search\">]<]minimax[>[<query>]<]minimax[>[<item>Tongyi-DeepResearch-30B-A3B huggingface model card]<]minimax[>[</item>]<]minimax[>[<item>Tongyi-DeepResearch-30B-A3B github alibaba-nlp]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[</tool_call>",
+        "reasoning": "The user asks in Portuguese: \"What are the total and active parameters per token of the Tongyi-DeepResearch-30B-A3B model?\"\n\nThis is the Tongyi DeepResearch 30B-A3B model from Alibaba (Tongyi Lab / Alibaba Cloud). It's a MoE model with 30B total para",
+        "elapsed_s": 1.4
+      },
+      {
+        "round": 2,
+        "content": "]<]minimax[>[<tool_call>\n]<]minimax[>[<item>search</item>]<]minimax[>[<query>Tongyi-DeepResearch-30B-A3B 30.5B total parameters 3.3B activated per token technical report]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[<item>search</item>]<]minimax[>[<query>\"Tongyi-DeepResearch-30B-A3B\" experts MoE architecture details context length 128K]<]minimax[>[</item>]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[</tool_call>",
+        "reasoning": "The user asks in Portuguese: what are the total and active parameters per token of Tongyi-DeepResearch-30B-A3B? The answer: 30.5B total, 3.3B activated per token. Let me maybe verify with a quick search for additional detail, but the tool result alre",
+        "elapsed_s": 1.53
+      },
+      {
+        "round": 3,
+        "content": "]<]minimax[>[<tool_call>name>search</invoke>\n<invoke name=\"search</invoke>\n<query>Tongyi-DeepResearch-30B-A3B model card 30.5B total 3.3B activated MoE 128K context Apache 2.0]<]minimax[>[</query>]<]minimax[>[</invoke>\n]<]minimax[>[</tool_call>",
+        "reasoning": "The user asks in Portuguese: what are the total and active parameters per token of Tongyi-DeepResearch-30B-A3B? Answer: 30.5B total, 3.3B activated per token. Provide context.\n\nLet me maybe do one more verification search for the technical report det",
+        "elapsed_s": 2.47
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT02_A",
+    "caso_id": "CT02",
+    "versao": "A",
+    "tipo_caso": "Funcional (Conceito de Arquitetura)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:56:45",
+    "pergunta": "Qual é o papel do componente WebThinker no framework DeepResearch?",
+    "referencia_ouro": "O WebThinker capacita Large Reasoning Models (LRMs) a executarem ciclos iterativos de raciocínio e pesquisa profunda na web.",
+    "fonte_apoio": "Relatório técnico e README oficial Alibaba-NLP/DeepResearch",
+    "tempo_segundos": 10.8,
+    "total_tokens": 2804,
+    "rounds_react": 2,
+    "resposta_extraida": "O **WebThinker** é o componente central de busca e raciocínio web do framework **Tongyi DeepResearch**. Ele transforma um modelo de raciocínio em um agente capaz de:\n\n- **Pesquisar na web** por meio da ferramenta `Search`;\n- **Acessar e extrair o conteúdo das páginas** com `Visit`, apoiada pelo Jina Reader;\n- **Alternar busca, leitura e análise iterativamente**, conforme o padrão **ReAct** — Reason + Act;\n- Realizar investigations mais longas no modo **Heavy/IterResearch**, refinando sucessivamente o plano e as evidências.\n\nAssim, o WebThinker não é apenas um mecanismo de recuperação de resultados. Ele constitui o **loop agentico dequiry–navegação–síntese**, responsável por planejar consultas, decidir quais páginas visitar, avaliar o conteúdo encontrado e incorporar as evidências à resposta. As ferramentas disponíveis incluem `Search`, `Visit`, `Scholar`, `FileParser` e `PythonInterpreter`.\n\nEm resumo: **o WebThinker é a camada que dá ao DeepResearch sua capacidade deConductir pesquisa profunda e verificável na internet**, integrando o raciocínio do modelo ao uso iterativo de ferramentas web. O repositório do projeto está sob licença Apache 2.0.",
+    "saida_bruta_final": "<answer>O **WebThinker** é o componente central de busca e raciocínio web do framework **Tongyi DeepResearch**. Ele transforma um modelo de raciocínio em um agente capaz de:\n\n- **Pesquisar na web** por meio da ferramenta `Search`;\n- **Acessar e extrair o conteúdo das páginas** com `Visit`, apoiada pelo Jina Reader;\n- **Alternar busca, leitura e análise iterativamente**, conforme o padrão **ReAct** — Reason + Act;\n- Realizar investigations mais longas no modo **Heavy/IterResearch**, refinando sucessivamente o plano e as evidências.\n\nAssim, o WebThinker não é apenas um mecanismo de recuperação de resultados. Ele constitui o **loop agentico dequiry–navegação–síntese**, responsável por planejar consultas, decidir quais páginas visitar, avaliar o conteúdo encontrado e incorporar as evidências à resposta. As ferramentas disponíveis incluem `Search`, `Visit`, `Scholar`, `FileParser` e `PythonInterpreter`.\n\nEm resumo: **o WebThinker é a camada que dá ao DeepResearch sua capacidade deConductir pesquisa profunda e verificável na internet**, integrando o raciocínio do modelo ao uso iterativo de ferramentas web. O repositório do projeto está sob licença Apache 2.0.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "<tool_call>\n{\"name\": \"search\", \"arguments\": {\"query\": [\"\\\"WebThinker\\\" \\\"DeepResearch\\\" framework\", \"\\\"WebThinker\\\" DeepResearch\", \"WebThinker component DeepResearch framework\"]}}\n</tool_call>",
+        "reasoning": "We need answer in Portuguese likely. Need understand question: \"Qual é o papel do componente WebThinker no framework DeepResearch?\" Need investigate. Could refer specific framework DeepResearch and component WebThinker, perhaps paper/framework. Need ",
+        "elapsed_s": 3.82
+      },
+      {
+        "round": 2,
+        "content": "<answer>O **WebThinker** é o componente central de busca e raciocínio web do framework **Tongyi DeepResearch**. Ele transforma um modelo de raciocínio em um agente capaz de:\n\n- **Pesquisar na web** por meio da ferramenta `Search`;\n- **Acessar e extrair o conteúdo das páginas** com `Visit`, apoiada pelo Jina Reader;\n- **Alternar busca, leitura e análise iterativamente**, conforme o padrão **ReAct** — Reason + Act;\n- Realizar investigations mais longas no modo **Heavy/IterResearch**, refinando sucessivamente o plano e as evidências.\n\nAssim, o WebThinker não é apenas um mecanismo de recuperação de resultados. Ele constitui o **loop agentico dequiry–navegação–síntese**, responsável por planejar consultas, decidir quais páginas visitar, avaliar o conteúdo encontrado e incorporar as evidências à resposta. As ferramentas disponíveis incluem `Search`, `Visit`, `Scholar`, `FileParser` e `PythonInterpreter`.\n\nEm resumo: **o WebThinker é a camada que dá ao DeepResearch sua capacidade deConductir pesquisa profunda e verificável na internet**, integrando o raciocínio do modelo ao uso iterativo de ferramentas web. O repositório do projeto está sob licença Apache 2.0.</answer>",
+        "reasoning": "We need answer in Portuguese, strictly tags. Need analyze provided evidence. User asks role component WebThinker in framework DeepResearch. Need likely explain it's core reasoning/search agent empowering LRMs with web search/browse iterative loops, R",
+        "elapsed_s": 5.49
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT03_A",
+    "caso_id": "CT03",
+    "versao": "A",
+    "tipo_caso": "Funcional (Governança e Licenciamento)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:56:51",
+    "pergunta": "Sob qual licença de código aberto o projeto Alibaba-NLP/DeepResearch é distribuído?",
+    "referencia_ouro": "O projeto Alibaba-NLP/DeepResearch é disponibilizado sob a licença de código aberto Apache 2.0.",
+    "fonte_apoio": "Arquivo LICENSE na raiz do repositório oficial",
+    "tempo_segundos": 3.47,
+    "total_tokens": 2385,
+    "rounds_react": 2,
+    "resposta_extraida": "O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, versão 2.0 (Apache-2.0)**.",
+    "saida_bruta_final": "<answer>O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, versão 2.0 (Apache-2.0)**.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "",
+        "reasoning": "We need answer in Portuguese likely. Need research. Question: \"Sob qual licença de código aberto o projeto Alibaba-NLP/DeepResearch é distribuído?\" Need identify GitHub project license. Need browse web. Search.",
+        "elapsed_s": 0.84
+      },
+      {
+        "round": 2,
+        "content": "<answer>O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, versão 2.0 (Apache-2.0)**.</answer>",
+        "reasoning": "We need answer in Portuguese, strictly tags. Need perhaps mention Apache License 2.0. User asks under what open source license distributed. Evidence says Apache 2.0. Need definitive concise. Ensure entire final within tags. Could include source repos",
+        "elapsed_s": 1.13
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT04_A",
+    "caso_id": "CT04",
+    "versao": "A",
+    "tipo_caso": "Funcional (Componente e Ferramenta)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:03",
+    "pergunta": "Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?",
+    "referencia_ouro": "A ferramenta visit utiliza a API do serviço externo Jina para leitura e sumarização do conteúdo de páginas web.",
+    "fonte_apoio": "Mapeamento TOOL_MAP em inference/react_agent.py e tool_visit.py",
+    "tempo_segundos": 10.4,
+    "total_tokens": 2587,
+    "rounds_react": 2,
+    "resposta_extraida": "A ferramenta **visit** utiliza a **Jina Reader API**, acessível por meio de **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.",
+    "saida_bruta_final": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível por meio de **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "<tool_call>\n{\"name\":\"search\",\"arguments\":{\"query\":[\"\\\"visit\\\" \\\"DeepResearch\\\" sumarização conteúdo web serviço externo\",\"\\\"visit tool\\\" \\\"DeepResearch\\\" web summarization external service\",\"site:github.com DeepResearch visit tool summarize webpage external service\"]}}\n</tool_call>",
+        "reasoning": "We need answer Portuguese. Need identify likely asks: \"Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?\" Maybe referring to system/tool implementation? Need research. Need understand context. Th",
+        "elapsed_s": 7.04
+      },
+      {
+        "round": 2,
+        "content": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível por meio de **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+        "reasoning": "We need answer Portuguese. User asks what external service used by visit tool for web content summarization in DeepResearch. Evidence explicitly Jina Reader API / r.jina.ai. Need final strictly tags. Could say \"A ferramenta visit utiliza a API do Jin",
+        "elapsed_s": 1.86
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT05_A",
+    "caso_id": "CT05",
+    "versao": "A",
+    "tipo_caso": "Sem Evidência Suficiente (Abstenção Obrigatória)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:09",
+    "pergunta": "Com base estrita no repositório, qual é a pontuação oficial obtida pelo DeepResearch no benchmark SWE-bench Lite?",
+    "referencia_ouro": "Evidência insuficiente. O repositório não apresenta métricas ou pontuações referentes ao benchmark SWE-bench Lite.",
+    "fonte_apoio": "Documentação oficial Alibaba-NLP/DeepResearch (omissão deliberada de SWE-bench Lite)",
+    "tempo_segundos": 3.67,
+    "total_tokens": 2531,
+    "rounds_react": 2,
+    "resposta_extraida": "**Não há pontuação oficial registrada para o DeepResearch no SWE-bench Lite.** O repositório `Alibaba-NLP/DeepResearch` apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA. Portanto, estritamente com base nele, não é possível atribuir ao modelo qualquer pontuação no SWE-bench Lite.",
+    "saida_bruta_final": "<answer>**Não há pontuação oficial registrada para o DeepResearch no SWE-bench Lite.** O repositório `Alibaba-NLP/DeepResearch` apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA. Portanto, estritamente com base nele, não é possível atribuir ao modelo qualquer pontuação no SWE-bench Lite.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "",
+        "reasoning": "We need answer Portuguese. Need understand \"com base estrita no repositório\" likely asks official score obtained by DeepResearch on SWE-bench Lite, based strictly on repository. Need identify repository perhaps OpenAI DeepResearch? Need investigate w",
+        "elapsed_s": 0.85
+      },
+      {
+        "round": 2,
+        "content": "<answer>**Não há pontuação oficial registrada para o DeepResearch no SWE-bench Lite.** O repositório `Alibaba-NLP/DeepResearch` apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA. Portanto, estritamente com base nele, não é possível atribuir ao modelo qualquer pontuação no SWE-bench Lite.</answer>",
+        "reasoning": "We need answer Portuguese. User asks \"Com base estrita no repositório, qual é a pontuação oficial obtida pelo DeepResearch no benchmark SWE-bench Lite?\" Given official repository info says benchmarks listed no SWE-bench Lite and no metrics/scores. Ne",
+        "elapsed_s": 1.32
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT06_A",
+    "caso_id": "CT06",
+    "versao": "A",
+    "tipo_caso": "Variação Metamórfica de CT01 (Paráfrase em Inglês)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:17",
+    "pergunta": "How many total and active params per token does Tongyi DeepResearch 30B A3B model have?",
+    "referencia_ouro": "The Tongyi-DeepResearch-30B-A3B model has 30.5 billion total parameters and 3.3 billion active parameters per token.",
+    "fonte_apoio": "README oficial em inglês (variação sintática/idiomática de CT01)",
+    "tempo_segundos": 6.41,
+    "total_tokens": 2488,
+    "rounds_react": 2,
+    "resposta_extraida": "Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are active per token**.",
+    "saida_bruta_final": "<answer>Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are active per token**.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "<tool_call>\n{\"name\": \"search\", \"arguments\": {\"query\": [\"Tongyi DeepResearch 30B A3B total active parameters per token\"]}}\n</tool_call>",
+        "reasoning": "We need answer factual. Need research web. Question asks total and active params per token for Tongyi DeepResearch 30B A3B. Need clarify likely model card. Need source. Search web.",
+        "elapsed_s": 2.1
+      },
+      {
+        "round": 2,
+        "content": "<answer>Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are active per token**.</answer>",
+        "reasoning": "We need answer. User asks English, Portuguese tool says finalize strictly tags. Need likely \"30.5B total, 3.3B active per token.\" Need cite perhaps mention official repo. We have document evidence. Need entire final inside answer tags. Concise. Ensur",
+        "elapsed_s": 2.81
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT01_B",
+    "caso_id": "CT01",
+    "versao": "B",
+    "tipo_caso": "Funcional (Busca Factual Curta)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:23",
+    "pergunta": "Quais são os parâmetros totais e ativos por token do modelo Tongyi-DeepResearch-30B-A3B?",
+    "referencia_ouro": "O Tongyi-DeepResearch-30B-A3B possui 30,5 bilhões de parâmetros totais e 3,3 bilhões de parâmetros ativos por token.",
+    "fonte_apoio": "README oficial do repositório Alibaba-NLP/DeepResearch",
+    "tempo_segundos": 3.92,
+    "total_tokens": 2626,
+    "rounds_react": 2,
+    "resposta_extraida": "O modelo **Tongyi-DeepResearch-30B-A3B** possui:\n\n- **Parâmetros totais:** 30,5 bilhões (30,5B)\n- **Parâmetros ativos por token:** 3,3 bilhões (3,3B)\n\nTrata-se de uma arquitetura **Mixture of Experts (MoE)**.",
+    "saida_bruta_final": "<answer>O modelo **Tongyi-DeepResearch-30B-A3B** possui:\n\n- **Parâmetros totais:** 30,5 bilhões (30,5B)\n- **Parâmetros ativos por token:** 3,3 bilhões (3,3B)\n\nTrata-se de uma arquitetura **Mixture of Experts (MoE)**.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "",
+        "reasoning": "We need answer Portuguese. Need research. Question: total and active parameters per token of model Tongyi-DeepResearch-30B-A3B. Need identify. Likely 30B total, 3B active per token (MoE). Need substantiate sources. Need perhaps exact parameters: 30.5",
+        "elapsed_s": 1.22
+      },
+      {
+        "round": 2,
+        "content": "<answer>O modelo **Tongyi-DeepResearch-30B-A3B** possui:\n\n- **Parâmetros totais:** 30,5 bilhões (30,5B)\n- **Parâmetros ativos por token:** 3,3 bilhões (3,3B)\n\nTrata-se de uma arquitetura **Mixture of Experts (MoE)**.</answer>",
+        "reasoning": "We need answer Portuguese. Need based supplied official docs. User asks total and active per token parameters of model. Need say 30.5 billion total, 3.3 billion activated per token. Strictly tags. We should perhaps mention approximately 30.5B total /",
+        "elapsed_s": 1.2
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT02_B",
+    "caso_id": "CT02",
+    "versao": "B",
+    "tipo_caso": "Funcional (Conceito de Arquitetura)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:35",
+    "pergunta": "Qual é o papel do componente WebThinker no framework DeepResearch?",
+    "referencia_ouro": "O WebThinker capacita Large Reasoning Models (LRMs) a executarem ciclos iterativos de raciocínio e pesquisa profunda na web.",
+    "fonte_apoio": "Relatório técnico e README oficial Alibaba-NLP/DeepResearch",
+    "tempo_segundos": 9.67,
+    "total_tokens": 2831,
+    "rounds_react": 2,
+    "resposta_extraida": "O **WebThinker** é o componente que habilita o modelo **Tongyi-DeepResearch** a realizar pesquisa aprofundada na web. Ele atua como uma camada de interação e raciocínio,hops.\n\nSua função principal é combinar, em **loops iterativos**, duas ferramentas:\n\n- **Search:** pesquisa na web e identifica páginas relevantes;\n- **Visit:** acessa e extrai o conteúdo dessas páginas, por meio da **Jina Reader API (`r.jina.ai`)**, permitindo sua leitura e sumarização.\n\nAssim, o WebThinker permite que o modelo não responda apenas com conhecimento paramétrico, mas **busque, examine e compare informações externamente** antes de elaborar a resposta. Ele suporta o paradigma **ReAct**, alternando ações e raciocínio, bem como o modo **Heavy/IterResearch**, voltado à investigação de longo prazo.\n\nPortanto, o WebThinker funciona como o **agente de pesquisa web e orquestrador de ferramentas** do framework DeepResearch; o modelo fornece a capacidade de raciocínio, enquanto o WebThinker supply as ações necessárias para descoberta, leitura e verificação de evidências online.",
+    "saida_bruta_final": "<answer>\nO **WebThinker** é o componente que habilita o modelo **Tongyi-DeepResearch** a realizar pesquisa aprofundada na web. Ele atua como uma camada de interação e raciocínio,hops.\n\nSua função principal é combinar, em **loops iterativos**, duas ferramentas:\n\n- **Search:** pesquisa na web e identifica páginas relevantes;\n- **Visit:** acessa e extrai o conteúdo dessas páginas, por meio da **Jina Reader API (`r.jina.ai`)**, permitindo sua leitura e sumarização.\n\nAssim, o WebThinker permite que o modelo não responda apenas com conhecimento paramétrico, mas **busque, examine e compare informações externamente** antes de elaborar a resposta. Ele suporta o paradigma **ReAct**, alternando ações e raciocínio, bem como o modo **Heavy/IterResearch**, voltado à investigação de longo prazo.\n\nPortanto, o WebThinker funciona como o **agente de pesquisa web e orquestrador de ferramentas** do framework DeepResearch; o modelo fornece a capacidade de raciocínio, enquanto o WebThinker supply as ações necessárias para descoberta, leitura e verificação de evidências online.\n</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "",
+        "reasoning": "We need answer Portuguese. Need research. Question: \"Qual é o papel do componente WebThinker no framework DeepResearch?\" Need identify likely specific framework/paper. Need web search. Search terms.",
+        "elapsed_s": 1.09
+      },
+      {
+        "round": 2,
+        "content": "<answer>\nO **WebThinker** é o componente que habilita o modelo **Tongyi-DeepResearch** a realizar pesquisa aprofundada na web. Ele atua como uma camada de interação e raciocínio,hops.\n\nSua função principal é combinar, em **loops iterativos**, duas ferramentas:\n\n- **Search:** pesquisa na web e identifica páginas relevantes;\n- **Visit:** acessa e extrai o conteúdo dessas páginas, por meio da **Jina Reader API (`r.jina.ai`)**, permitindo sua leitura e sumarização.\n\nAssim, o WebThinker permite que o modelo não responda apenas com conhecimento paramétrico, mas **busque, examine e compare informações externamente** antes de elaborar a resposta. Ele suporta o paradigma **ReAct**, alternando ações e raciocínio, bem como o modo **Heavy/IterResearch**, voltado à investigação de longo prazo.\n\nPortanto, o WebThinker funciona como o **agente de pesquisa web e orquestrador de ferramentas** do framework DeepResearch; o modelo fornece a capacidade de raciocínio, enquanto o WebThinker supply as ações necessárias para descoberta, leitura e verificação de evidências online.\n</answer>",
+        "reasoning": "We need answer Portuguese. Need use provided tool response, perhaps asked role WebThinker in DeepResearch framework. Need formulate definitive enclosed tags. Need ensure based evidence. Explain it's component/framework empowering LRM with web search ",
+        "elapsed_s": 7.08
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT03_B",
+    "caso_id": "CT03",
+    "versao": "B",
+    "tipo_caso": "Funcional (Governança e Licenciamento)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:43",
+    "pergunta": "Sob qual licença de código aberto o projeto Alibaba-NLP/DeepResearch é distribuído?",
+    "referencia_ouro": "O projeto Alibaba-NLP/DeepResearch é disponibilizado sob a licença de código aberto Apache 2.0.",
+    "fonte_apoio": "Arquivo LICENSE na raiz do repositório oficial",
+    "tempo_segundos": 5.74,
+    "total_tokens": 2538,
+    "rounds_react": 2,
+    "resposta_extraida": "O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, Version 2.0 (Apache 2.0)**.",
+    "saida_bruta_final": "<answer>O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, Version 2.0 (Apache 2.0)**.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "",
+        "reasoning": "We need answer in Portuguese likely. Need research. Question: under what open source license project Alibaba-NLP/DeepResearch distributed? Need inspect GitHub/repo credible source. Must use tools deep research? Simple factual, search web. Need answer",
+        "elapsed_s": 2.39
+      },
+      {
+        "round": 2,
+        "content": "<answer>O projeto **Alibaba-NLP/DeepResearch** é distribuído sob a **Apache License, Version 2.0 (Apache 2.0)**.</answer>",
+        "reasoning": "We need answer in Portuguese likely just license. Need strictly tags. Need perhaps mention Apache License 2.0 and link? User asks \"Sob qual licença...\" Evidence explicit. We should be concise. Entire final within tags. Ensure no outside.",
+        "elapsed_s": 1.84
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT04_B",
+    "caso_id": "CT04",
+    "versao": "B",
+    "tipo_caso": "Funcional (Componente e Ferramenta)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:51",
+    "pergunta": "Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?",
+    "referencia_ouro": "A ferramenta visit utiliza a API do serviço externo Jina para leitura e sumarização do conteúdo de páginas web.",
+    "fonte_apoio": "Mapeamento TOOL_MAP em inference/react_agent.py e tool_visit.py",
+    "tempo_segundos": 6.4,
+    "total_tokens": 2622,
+    "rounds_react": 2,
+    "resposta_extraida": "A ferramenta **visit** utiliza a **Jina Reader API**, acessível pelo endpoint **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.",
+    "saida_bruta_final": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível pelo endpoint **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "",
+        "reasoning": "We need answer Portuguese. Question: \"Qual serviço externo é utilizado pela ferramenta visit para sumarização de conteúdo web no DeepResearch?\" Need determine likely asks about implementation of DeepResearch perhaps some GitHub project / service. Nee",
+        "elapsed_s": 3.63
+      },
+      {
+        "round": 2,
+        "content": "<answer>A ferramenta **visit** utiliza a **Jina Reader API**, acessível pelo endpoint **`r.jina.ai`**, para ler e sumarizar o conteúdo das páginas web no DeepResearch.</answer>",
+        "reasoning": "We need answer in Portuguese, strictly tags. Need determine external service used by visit tool for web content summarization in DeepResearch. Evidence says Jina API / Jina Reader API r.jina.ai. Need perhaps concise definitive. User explicitly asks. ",
+        "elapsed_s": 1.27
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT05_B",
+    "caso_id": "CT05",
+    "versao": "B",
+    "tipo_caso": "Sem Evidência Suficiente (Abstenção Obrigatória)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:57:59",
+    "pergunta": "Com base estrita no repositório, qual é a pontuação oficial obtida pelo DeepResearch no benchmark SWE-bench Lite?",
+    "referencia_ouro": "Evidência insuficiente. O repositório não apresenta métricas ou pontuações referentes ao benchmark SWE-bench Lite.",
+    "fonte_apoio": "Documentação oficial Alibaba-NLP/DeepResearch (omissão deliberada de SWE-bench Lite)",
+    "tempo_segundos": 5.94,
+    "total_tokens": 2615,
+    "rounds_react": 2,
+    "resposta_extraida": "Não há uma pontuação oficial do DeepResearch para o SWE-bench Lite registrada no repositório. O repositório apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA.\n\nPortanto, com base estrita nas evidências do repositório, **não é possível determinar a pontuação no SWE-bench Lite — evidência insuficiente**.",
+    "saida_bruta_final": "<answer>Não há uma pontuação oficial do DeepResearch para o SWE-bench Lite registrada no repositório. O repositório apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA.\n\nPortanto, com base estrita nas evidências do repositório, **não é possível determinar a pontuação no SWE-bench Lite — evidência insuficiente**.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "",
+        "reasoning": "We need answer Portuguese. Need understand \"Com base estrita no repositório\" likely asks official score obtained by DeepResearch on SWE-bench Lite, strictly based on repository. Need identify perhaps a GitHub repo associated with DeepResearch, maybe ",
+        "elapsed_s": 2.53
+      },
+      {
+        "round": 2,
+        "content": "<answer>Não há uma pontuação oficial do DeepResearch para o SWE-bench Lite registrada no repositório. O repositório apresenta resultados apenas em Humanity’s Last Exam, BrowseComp, BrowseComp-ZH, WebWalkerQA, xbench-DeepSearch, FRAMES, SimpleQA e GAIA.\n\nPortanto, com base estrita nas evidências do repositório, **não é possível determinar a pontuação no SWE-bench Lite — evidência insuficiente**.</answer>",
+        "reasoning": "We need answer Portuguese. User asks \"Com base estrita no repositório, qual é a pontuação oficial obtida pelo DeepResearch no benchmark SWE-bench Lite?\" Tool response explicitly says repo doesn't present metrics/scores for SWE-bench Lite. Need state ",
+        "elapsed_s": 1.92
+      }
+    ]
+  },
+  {
+    "id_execucao": "CT06_B",
+    "caso_id": "CT06",
+    "versao": "B",
+    "tipo_caso": "Variação Metamórfica de CT01 (Paráfrase em Inglês)",
+    "modelo": "minimax/minimax-m3.1-flash",
+    "temperatura": 0.0,
+    "timestamp": "2026-11-10 21:58:07",
+    "pergunta": "How many total and active params per token does Tongyi DeepResearch 30B A3B model have?",
+    "referencia_ouro": "The Tongyi-DeepResearch-30B-A3B model has 30.5 billion total parameters and 3.3 billion active parameters per token.",
+    "fonte_apoio": "README oficial em inglês (variação sintática/idiomática de CT01)",
+    "tempo_segundos": 5.47,
+    "total_tokens": 2584,
+    "rounds_react": 2,
+    "resposta_extraida": "Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are activated per token**.",
+    "saida_bruta_final": "<answer>Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are activated per token**.</answer>",
+    "historico_interacoes": [
+      {
+        "round": 1,
+        "content": "<tool_call>\n{\"name\": \"search\",\"arguments\": {\"query\": [\"Tongyi DeepResearch 30B A3B total parameters active parameters per token\"]}}\n</tool_call>",
+        "reasoning": "We need answer factual likely model Hugging Face Tongyi DeepResearch 30B A3B. Need determine total and active params per token. Need research credible sources. Searchweb.",
+        "elapsed_s": 1.64
+      },
+      {
+        "round": 2,
+        "content": "<answer>Tongyi DeepResearch 30B-A3B has **30.5 billion total parameters**, of which **3.3 billion are activated per token**.</answer>",
+        "reasoning": "We need answer in tags. User asks how many total and active params per token. Evidence gives 30.5b total, 3.3b activated per token. Need perhaps distinguish marketed 30B A3B and exact. Entire final between tags. In Portuguese? User English but prompt",
+        "elapsed_s": 2.32
+      }
+    ]
+  }
+]
