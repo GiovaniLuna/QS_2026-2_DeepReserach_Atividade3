@@ -38,7 +38,7 @@ Detalhes de gravação e participantes em [`VIDEO.md`](VIDEO.md).
 - **Filipe de Carvalho Godoy** (202100115408): [ Parte C — métrica automática. Definição e pré-registro da métrica (F1 lexical por tokens), da normalização NFC/casefold, da tokenização, do tratamento de casos de borda e do limiar τ = 0,5, versionados antes da execução da bateria. Implementação do script de cálculo e da suíte de verificação com 10 pares de valor calculado manualmente. Cálculo do F1 e do sinal automático das 12 saídas. Declaração prévia da limitação da métrica, com previsão registrada antes da bateria de que abstenções corretas e concisas seriam reprovadas pelo sinal automático — confirmada no CT05. ]
 - **Giovani Barros Luna Gomes** (202400050885): [ A DEFINIR ]
 - **Lais Santos de Sousa** (202100115364): [ A DEFINIR ]
-- **Thiago Mecena Silva** (202100045840): [ A DEFINIR ]
+- **Thiago Mecena Silva** (202100045840): [ Preparação do conjunto de 6 casos de teste (CT01 a CT06), definição dos critérios de validação e elaboração das Referências Curtas de Ouro (gabarito humano) para o experimento GQM de comparação entre as Versões A e B. ]
 
 ## Entregáveis (Prazo: 11/11/2026)
 
