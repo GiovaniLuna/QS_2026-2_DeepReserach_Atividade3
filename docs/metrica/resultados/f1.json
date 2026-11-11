@@ -1,0 +1,134 @@
+[
+    {
+        "caso": "CT01",
+        "versao": "A",
+        "tokens_resposta": 74,
+        "tokens_referencia": 21,
+        "precisao": 0.2568,
+        "revocacao": 0.9048,
+        "f1_lexical": 0.4,
+        "sinal_automatico": "reprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT01",
+        "versao": "B",
+        "tokens_resposta": 32,
+        "tokens_referencia": 21,
+        "precisao": 0.5938,
+        "revocacao": 0.9048,
+        "f1_lexical": 0.717,
+        "sinal_automatico": "aprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT02",
+        "versao": "A",
+        "tokens_resposta": 163,
+        "tokens_referencia": 18,
+        "precisao": 0.0613,
+        "revocacao": 0.5556,
+        "f1_lexical": 0.1105,
+        "sinal_automatico": "reprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT02",
+        "versao": "B",
+        "tokens_resposta": 152,
+        "tokens_referencia": 18,
+        "precisao": 0.0658,
+        "revocacao": 0.5556,
+        "f1_lexical": 0.1176,
+        "sinal_automatico": "reprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT03",
+        "versao": "A",
+        "tokens_resposta": 17,
+        "tokens_referencia": 16,
+        "precisao": 0.6471,
+        "revocacao": 0.6875,
+        "f1_lexical": 0.6667,
+        "sinal_automatico": "aprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT03",
+        "versao": "B",
+        "tokens_resposta": 17,
+        "tokens_referencia": 16,
+        "precisao": 0.6471,
+        "revocacao": 0.6875,
+        "f1_lexical": 0.6667,
+        "sinal_automatico": "aprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT04",
+        "versao": "A",
+        "tokens_resposta": 26,
+        "tokens_referencia": 19,
+        "precisao": 0.5,
+        "revocacao": 0.6842,
+        "f1_lexical": 0.5778,
+        "sinal_automatico": "aprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT04",
+        "versao": "B",
+        "tokens_resposta": 25,
+        "tokens_referencia": 19,
+        "precisao": 0.48,
+        "revocacao": 0.6316,
+        "f1_lexical": 0.5455,
+        "sinal_automatico": "aprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT05",
+        "versao": "A",
+        "tokens_resposta": 52,
+        "tokens_referencia": 15,
+        "precisao": 0.1538,
+        "revocacao": 0.5333,
+        "f1_lexical": 0.2388,
+        "sinal_automatico": "reprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT05",
+        "versao": "B",
+        "tokens_resposta": 55,
+        "tokens_referencia": 15,
+        "precisao": 0.1636,
+        "revocacao": 0.6,
+        "f1_lexical": 0.2571,
+        "sinal_automatico": "reprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT06",
+        "versao": "A",
+        "tokens_resposta": 19,
+        "tokens_referencia": 20,
+        "precisao": 0.8421,
+        "revocacao": 0.8,
+        "f1_lexical": 0.8205,
+        "sinal_automatico": "aprova",
+        "observacao": ""
+    },
+    {
+        "caso": "CT06",
+        "versao": "B",
+        "tokens_resposta": 19,
+        "tokens_referencia": 20,
+        "precisao": 0.7895,
+        "revocacao": 0.75,
+        "f1_lexical": 0.7692,
+        "sinal_automatico": "aprova",
+        "observacao": ""
+    }
+]

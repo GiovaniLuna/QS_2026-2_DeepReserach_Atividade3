@@ -1,0 +1,13 @@
+caso;versao;tokens_resposta;tokens_referencia;precisao;revocacao;f1_lexical;sinal_automatico;observacao
+CT01;A;74;21;0.2568;0.9048;0.4;reprova;
+CT01;B;32;21;0.5938;0.9048;0.717;aprova;
+CT02;A;163;18;0.0613;0.5556;0.1105;reprova;
+CT02;B;152;18;0.0658;0.5556;0.1176;reprova;
+CT03;A;17;16;0.6471;0.6875;0.6667;aprova;
+CT03;B;17;16;0.6471;0.6875;0.6667;aprova;
+CT04;A;26;19;0.5;0.6842;0.5778;aprova;
+CT04;B;25;19;0.48;0.6316;0.5455;aprova;
+CT05;A;52;15;0.1538;0.5333;0.2388;reprova;
+CT05;B;55;15;0.1636;0.6;0.2571;reprova;
+CT06;A;19;20;0.8421;0.8;0.8205;aprova;
+CT06;B;19;20;0.7895;0.75;0.7692;aprova;

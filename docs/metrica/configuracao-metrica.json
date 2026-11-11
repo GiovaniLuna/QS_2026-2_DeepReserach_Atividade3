@@ -1,0 +1,37 @@
+{
+    "atividade": "Qualidade de Software — Atividade 3 (2026.2)",
+    "parte": "C — métrica automática simples",
+    "equipe": "Equipe 06",
+    "registrado_em": "2026-11-10",
+    "registrado_antes_da_bateria": true,
+    "metrica": "F1 lexical por tokens",
+    "tau": 0.5,
+    "regra_do_sinal": "automatico aprova se F1_lexical >= tau",
+    "normalizacao": {
+        "ordem": [
+            "NFC",
+            "casefold",
+            "tokenizacao"
+        ],
+        "unicode": "NFC",
+        "caixa": "casefold",
+        "tokenizador": "\\w+ com flag UNICODE",
+        "inclui_digitos": true,
+        "remove_acentos": false,
+        "intersecao": "multiconjuntos (Counter & Counter)"
+    },
+    "formulas": {
+        "P_tokens": "tokens_em_comum / tokens_da_resposta",
+        "R_tokens": "tokens_em_comum / tokens_da_referencia",
+        "F1_lexical": "2 * P_tokens * R_tokens / (P_tokens + R_tokens)"
+    },
+    "casos_de_borda": {
+        "resposta_vazia": "F1 = 0",
+        "resposta_so_com_pontuacao": "F1 = 0 (nao gera token)",
+        "sem_sobreposicao": "F1 = 0",
+        "referencia_sem_tokens": "nao pontuar; sinal 'indefinido'; o caso precisa ser corrigido"
+    },
+    "unidade": "adimensional, no intervalo [0, 1]",
+    "denominador": "1 valor por saida; 6 saidas por versao; 12 saidas no total",
+    "limitacao_declarada": "O F1 lexical mede sobreposicao de palavras, nao adequacao factual. Uma parafrase correta pode pontuar baixo e uma resposta factualmente errada que repita o vocabulario da referencia pode pontuar alto. O sinal automatico nao substitui a avaliacao humana da Parte D."
+}

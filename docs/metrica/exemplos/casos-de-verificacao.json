@@ -1,0 +1,72 @@
+[
+    {
+        "descricao": "textos identicos",
+        "resposta": "o agente respondeu com fonte",
+        "referencia": "o agente respondeu com fonte",
+        "f1_esperado": 1.0,
+        "porque": "todos os 5 tokens coincidem: P=R=1"
+    },
+    {
+        "descricao": "sem nenhuma sobreposicao",
+        "resposta": "banana laranja",
+        "referencia": "parafuso martelo",
+        "f1_esperado": 0.0,
+        "porque": "intersecao vazia, regra explicita do enunciado"
+    },
+    {
+        "descricao": "sobreposicao parcial",
+        "resposta": "o gato preto dorme",
+        "referencia": "o gato dorme",
+        "f1_esperado": 0.8571428571428571,
+        "porque": "3 comuns; P=3/4, R=3/3, F1=2*0.75*1/(1.75)"
+    },
+    {
+        "descricao": "resposta vazia",
+        "resposta": "",
+        "referencia": "qualquer referencia",
+        "f1_esperado": 0.0,
+        "porque": "regra explicita do enunciado"
+    },
+    {
+        "descricao": "resposta so com pontuacao",
+        "resposta": "...  ---  !!!",
+        "referencia": "texto de referencia",
+        "f1_esperado": 0.0,
+        "porque": "pontuacao nao gera token, equivale a resposta vazia"
+    },
+    {
+        "descricao": "referencia sem tokens",
+        "resposta": "o agente respondeu",
+        "referencia": "???",
+        "f1_esperado": null,
+        "porque": "nao inventar score; o caso precisa ser corrigido"
+    },
+    {
+        "descricao": "caixa e acento compostos (NFC)",
+        "resposta": "NÃO HÁ EVIDÊNCIA",
+        "referencia": "não há evidência",
+        "f1_esperado": 1.0,
+        "porque": "NFC + casefold tornam as duas formas iguais"
+    },
+    {
+        "descricao": "acento decomposto (NFD) vs composto",
+        "resposta": "não há",
+        "referencia": "não há",
+        "f1_esperado": 1.0,
+        "porque": "prova que a normalizacao NFC e necessaria: sem ela daria 0"
+    },
+    {
+        "descricao": "multiconjunto: repeticao conta",
+        "resposta": "11 11",
+        "referencia": "10 11",
+        "f1_esperado": 0.5,
+        "porque": "intersecao de multiconjuntos da 1, nao 2; P=1/2, R=1/2"
+    },
+    {
+        "descricao": "parafrase correta com F1 baixo",
+        "resposta": "a resposta foi entregue em onze de novembro",
+        "referencia": "entregue 11/11",
+        "f1_esperado": 0.18181818181818182,
+        "porque": "limitacao central do F1 lexical: mesmo sentido, 1 token em comum; P=1/8, R=1/3"
+    }
+]

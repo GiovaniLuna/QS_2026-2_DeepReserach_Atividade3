@@ -35,7 +35,7 @@ Detalhes de gravação e participantes em [`VIDEO.md`](VIDEO.md).
 - **Brenno Phelipe Silva dos Santos** (202400050750): [ A DEFINIR ]
 - **Daniel José Silva Trindade** (202200059698): [ A DEFINIR ]
 - **Emilly Kathellen de Jesus Oliveira** (202400050830): [ A DEFINIR ]
-- **Filipe de Carvalho Godoy** (202100115408): [ A DEFINIR ]
+- **Filipe de Carvalho Godoy** (202100115408): [ Parte C — métrica automática. Definição e pré-registro da métrica (F1 lexical por tokens), da normalização NFC/casefold, da tokenização, do tratamento de casos de borda e do limiar τ = 0,5, versionados antes da execução da bateria. Implementação do script de cálculo e da suíte de verificação com 10 pares de valor calculado manualmente. Cálculo do F1 e do sinal automático das 12 saídas. Declaração prévia da limitação da métrica, com previsão registrada antes da bateria de que abstenções corretas e concisas seriam reprovadas pelo sinal automático — confirmada no CT05. ]
 - **Giovani Barros Luna Gomes** (202400050885): [ A DEFINIR ]
 - **Lais Santos de Sousa** (202100115364): [ A DEFINIR ]
 - **Thiago Mecena Silva** (202100045840): [ A DEFINIR ]
