@@ -1,6 +1,6 @@
 # Detalhes de Gravação e Participantes - AV1
 
-* **Link do Vídeo da Atividade:** 
+* **Link do Vídeo da Atividade: https://youtu.be/Kisnk8dgzX8?is=3-YPPr7Oef5DyiyE** 
 
 ## Divisão de Responsabilidades e Apresentação 
 
